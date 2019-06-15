@@ -1,0 +1,13 @@
+.ba-footer {
+	padding: 82px 0;
+	background-color: #9f9acf;
+	color: #FFF;
+
+	.fa {
+		color: #FFF;
+		&:hover {
+			color: darken(#fff, 50%);
+		}
+	}
+}
+

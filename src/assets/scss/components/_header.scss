@@ -1,0 +1,156 @@
+.ba-main-menu{
+    li{
+        // padding-left: 20px;
+    }
+    a{
+        color: $black;
+        &:hover{
+            color: lighten($primary-color, 20%);
+        }
+    }
+}
+.off-canvas{
+    .menu{
+        a{
+            padding: 40px;
+        }
+    }
+}
+
+.ba-header-wrap {
+    background: transparent;
+    position: fixed;
+    z-index: 10;
+    a {
+      color: $body-font-color;
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+      }
+    }
+    .menu {
+      li + li {
+        margin-left: 28px;
+        @include breakpoint(large) {
+          margin-left: 56px;
+        }
+      }
+      a {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $body-font-color;
+        &:hover,
+        &:focus {
+          color: $secondary-color;
+        }
+        @include breakpoint(large) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .menu {
+    a {
+      font-size: 12px;
+      font-weight: 700;
+      color: $body-font-color;
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+      }
+      @include breakpoint(large) {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .menu-icon {
+    margin-right: 20px;
+  }
+  
+  .ba-header-bar {
+      .menu {
+          position: relative;
+          z-index: 2;
+      }
+    svg {
+      display: block;
+    }
+    &__left,
+    &__right {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+    &__center {
+      flex-shrink: 0;
+      min-height: 48px;
+      padding-top: 9px;
+      @include breakpoint(medium) {
+        height: 75px;
+        padding-top: 19px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      .menu {
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__right {
+      .menu {
+        flex-grow: 1;
+      }
+    }
+  
+    &__actions {
+      display: flex;
+      align-items: center;
+      a + a {
+        margin-left: 20px;
+        @include breakpoint(large) {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+  
+  .ba-logo {
+    position: relative;
+    z-index: 1;
+    img {
+      position: relative;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 111px;
+      height: 47px;
+      z-index: 0;
+      background-color:transparent;
+      bottom: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+  
+      @include breakpoint(large) {
+        width: 230px;
+        height: 100px;
+        bottom: -17px;
+      }
+    }
+    &--footer {
+      margin-bottom: 25px;
+      &:after {
+        bottom: auto;
+        top: -8px;
+        @include breakpoint(medium) {
+          top: -21px;
+        }
+      }
+    }
+  }
