@@ -1,0 +1,75 @@
+//map
+.ba-subscribe{
+    position: relative;
+    width: 100%;
+    &__body {
+      position: absolute;
+      background: rgba(158, 153, 206, 0.4);
+      padding: 50px 0;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    &__info {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      overflow: hidden;
+    }
+    &__box {
+      display: flex;
+      transform: translateX(250px);
+      transition: transform 0.3s ease-in;
+      &:hover {
+        transform: translateX(0);
+      }
+    }
+    &__box1 {
+      background: #9E99CE;
+      padding: 30px;
+      height: 90px;
+      width: 90px;
+    }
+    &__box2 {
+      background: rgba(255,255,255, 0.5);
+      width: 250px;
+      padding: 10px 0 0;
+    }
+   }
+   .ba-map {
+    height: 900px;
+   }
+   //form
+   .ba-subscribe-form {
+    padding-top: 150px;
+    max-width: 850px;
+    margin: 0 auto;
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__elem {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    &__name {
+      width: 47.5%;
+    }
+    &__email {
+      width: 47.5%;
+    }
+    &__textarea {
+      resize: none;
+      overflow: hidden;
+    }
+    & input, & textarea {
+      padding: 20px;
+    }
+    &__btn {
+    //   font: 700 20px/1 $headings-font-family;
+      padding: 20px 40px;
+    }
+   }

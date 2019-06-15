@@ -2,7 +2,10 @@
 	padding: 82px 0;
 	background-color: #9f9acf;
 	color: #FFF;
-
+	display: flex;
+	.ba-footer__socials{
+		list-style: none;
+	}
 	.fa {
 		color: #FFF;
 		&:hover {
